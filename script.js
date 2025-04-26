@@ -331,6 +331,11 @@ function startGame() {
     ctx.fillStyle = 'white';
     ctx.fillText('Recolecta todos los pedales para pasar al siguiente nivel', canvas.width/2, canvas.height/2 + 80);
 
+    // Agregar el nombre debajo de las instrucciones
+    ctx.font = 'bold 16px Arial';
+    ctx.fillStyle = '#FFD700'; // Color dorado para que resalte
+    ctx.fillText('Julio Perez', canvas.width/2, canvas.height/2 + 110);
+
     // Función para manejar el clic en el botón
     const handleClick = (event) => {
         const rect = canvas.getBoundingClientRect();
